@@ -1,4 +1,4 @@
-# Coffee-Junkie
+# Lips-Cafe
 
 <b>PROBLEM:</b><br>
 The local coffee shop seeks to increase customers coming to the shop and using a website to promote sales.
