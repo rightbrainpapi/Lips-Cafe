@@ -22,7 +22,7 @@ function eventListeners(){
   })
 
   // Submit Form
-  document.querySelector('.drink-form').addEventListener('submit', function(event){
+  document.querySelector('.event-form').addEventListener('submit', function(event){
     event.preventDefault();
     const name = document.querySelector('.input-name').value;
     const lastname = document.querySelector('.input-lastname').value;
@@ -99,7 +99,7 @@ UI.prototype.checkEmpty = function(name, lastname, email){
 
 // Show Feedback
 UI.prototype.showFeedback = function(text, type){
-  const feedback = document.querySelector('.drink-form__feedback');
+  const feedback = document.querySelector('.event-form__feedback');
 
   if (type === 'success'){
 
@@ -117,7 +117,7 @@ UI.prototype.showFeedback = function(text, type){
 // Remove Alert
 UI.prototype.removeAlert = function(type){
     setTimeout(function () {
-      document.querySelector('.drink-form__feedback').classList.remove(type)
+      document.querySelector('.event-form__feedback').classList.remove(type)
     }, 3000)
 }
 
@@ -133,7 +133,7 @@ UI.prototype.addCustomer = function(customer){
   thumbnail.src = 'img/person-' + random + '.jpg';
   div.querySelector('.person__name').innerText = customer.name;
   div.querySelector('.person__last-name').innerText = customer.lastname;
-  document.querySelector('.drink-card__list').appendChild(div);
+  document.querySelector('.event-card__list').appendChild(div);
 }
 
 // Clear Fields

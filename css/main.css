@@ -90,7 +90,7 @@ body{
   letter-spacing: 0.1rem;
   line-height: 1.5rem;
   margin-top: 1rem;
-  /* Color comes and font style comes from global */
+  /* Color comes and font style comes */
   /* color: var(--grey);
   color: black; */
 }
@@ -341,7 +341,7 @@ body{
 }
 
 /* Drink */
-.drink{
+.event{
   background: var(--brown);
   /* color: var(--brightRed); */
   /* color: yellow; */
@@ -350,7 +350,7 @@ body{
   /* font-family: 'Montserrat', sans-serif; */
 }
 
-.drink-form, .drink-card{
+.event-form, .event-card{
   text-align: center;
   display: grid;
   grid-template-columns: 70%;
@@ -358,7 +358,7 @@ body{
   grid-row-gap: 1.25rem;
 }
 
-.drink-form__feedback{
+.event-form__feedback{
   border: 0.1rem solid var(--brightRed);
   padding: 0.25rem;
   display: none;
@@ -376,15 +376,15 @@ body{
   border-color: var(--green);
 }
 
-.drink-form__title, .drink-card__title{
+.event-form__title, .event-card__title{
   font-size: 3rem;
 }
 
-.input-name, .input-lastname, .input-email{
+.input-name, .input-lastname, .input-email, .input-textarea{
   width: 100%;
 }
 
-.input-name, .input-lastname, .input-email, .input-submit{
+.input-name, .input-lastname, .input-email, .input-textarea, .input-submit{
   font-size: 1rem;
   border-radius: 0.5rem;
   padding: 0.25rem 0.5rem;
@@ -394,7 +394,7 @@ body{
   outline: none;
 }
 
-.input-name::placeholder, .input-lastname::placeholder, .input-email::placeholder{
+.input-name::placeholder, .input-lastname::placeholder, .input-textarea::placeholder, .input-email::placeholder{
   color: var(--darkBrown);
   text-transform: capitalize;
 }
@@ -411,7 +411,7 @@ body{
   opacity: 0.8;
 }
 
-.drink-card__list{
+.event-card__list{
   display: grid;
   grid-template-columns: 100%;
   grid-row-gap: 2rem;
@@ -427,6 +427,7 @@ body{
   padding: 1rem;
   border-radius: 0.5rem;
   font-size: 1.5rem;
+  background: white;
 }
 
 .person__thumbnail{
@@ -435,7 +436,7 @@ body{
 }
 
 @media screen and (min-width:768px){
-  .drink-card__list{
+  .event-card__list{
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
   }
