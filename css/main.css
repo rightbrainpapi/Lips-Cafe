@@ -10,7 +10,7 @@
 :root{
   --brightRed: rgb(230, 21, 27);
   --darkBrown: #BB9457;
-  --yellow:rgb(238, 230, 215);
+  --eggshell:rgb(238, 230, 215);
   --brown: #382923;
   --black: #191919;
   --grey: #A9B2AC;
@@ -81,7 +81,7 @@ body{
 }
 
 .section-title__underline{
-  background: var(--yellow);
+  background: var(--eggshell);
   width: 5rem;
   height: 0.25rem;
 }
@@ -90,8 +90,9 @@ body{
   letter-spacing: 0.1rem;
   line-height: 1.5rem;
   margin-top: 1rem;
-  color: var(--grey);
-  color: black;
+  /* Color comes and font style comes from global */
+  /* color: var(--grey);
+  color: black; */
 }
 
 /* End - Global Styles */
@@ -195,7 +196,7 @@ body{
   top: 5%;
   right: 5%;
   font-size: 3.5rem;
-  color: var(--yellow);
+  color: var(--eggshell);
   cursor: pointer;
   animation-name: pulse;
   animation-duration: 2s;
@@ -289,7 +290,7 @@ body{
   .video__switch{
     position: relative;
     width: 5rem;
-    background: var(--yellow);
+    background: var(--eggshell);
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
@@ -343,7 +344,7 @@ body{
 .drink{
   background: var(--brown);
   /* color: var(--brightRed); */
-  color: yellow;
+  /* color: yellow; */
   text-transform: capitalize;
   background: linear-gradient(rgba(233, 25, 25, 0.507),rgba(233, 25, 25, 0.507)),url('../img/redRnd.jpg');
   /* font-family: 'Montserrat', sans-serif; */
@@ -399,7 +400,7 @@ body{
 }
 
 .input-submit{
-  background: var(--yellow);
+  background: var(--eggshell);
   color: var(--black);
   transition: all 0.5s linear;
   cursor: pointer;
@@ -454,7 +455,7 @@ body{
 }
 
 .work-item{
-  background: linear-gradient(var(--yellow), var(--yellow));
+  background: linear-gradient(var(--eggshell), var(--eggshell));
   overflow: hidden;
   position: relative;
 }
@@ -560,7 +561,7 @@ body{
   background: url(../img/work-1.jpg)center/cover;
   height: 70vh;
   width: 60vw;
-  border: 0.25rem solid var(--yellow);
+  border: 0.25rem solid var(--eggshell);
   border-radius: 0.4rem;
 }
 
@@ -607,7 +608,7 @@ body{
 
 .contact-item__icon{
   font-size: 3rem;
-  color: var(--yellow);
+  color: var(--eggshell);
 }
 
 .contact-item__title{
